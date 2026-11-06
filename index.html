@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Portfolio — Alex Maurer</title>
+<link rel="icon" type="image/svg" sizes="32x32" href="content/logo/logo-32.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<nav id="nav">
+  <a href="#hero" class="logo">
+    <img src="content/logo/logo.svg" alt="L3X-Logo" width="48px">
+  </a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#work">Work</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg-logo" aria-hidden="true">
+    <img src="content/logo/logo.svg" alt="">
+  </div>
+  <div class="hero-grid">
+
+    <h1 class="hero-title">
+      <span class="word-reveal"><span class="hero-byline"><span class="hero-byline-thin">Alex&nbsp;</span>Maurer's</span></span>
+      <span class="word-reveal"><span><span class="portfolio-brush">Portfolio</span></span></span>
+    </h1>
+
+    <div class="hero-bottom">
+      <p class="hero-tagline reveal reveal-delay-2">
+        UX/UI and corporate design with <strong>5+ years</strong> of experience shipping design systems, identities, and digital products from concept to rollout.
+      </p>
+      <a href="#work" class="hero-cta reveal reveal-delay-4">
+        See my work
+        <span>→</span>
+      </a>
+    </div>
+  </div>
+  <div class="scroll-indicator">Scroll</div>
+</section>
+
+<!-- MARQUEE (tape strip) -->
+<div class="marquee">
+  <div class="marquee-track">
+    <span>UX / UI Design</span><span class="circle">●</span>
+    <span>Corporate Design</span><span class="circle">●</span>
+    <span>Design Systems</span><span class="circle">●</span>
+    <span>Brand Rollout</span><span class="circle">●</span>
+    <span>Mobile Apps</span><span class="circle">●</span>
+    <span>HMI Design</span><span class="circle">●</span>
+    <span>UX / UI Design</span><span class="circle">●</span>
+    <span>Corporate Design</span><span class="circle">●</span>
+    <span>Design Systems</span><span class="circle">●</span>
+    <span>Brand Rollout</span><span class="circle">●</span>
+    <span>Mobile Apps</span><span class="circle">●</span>
+    <span>HMI Design</span><span class="circle">●</span>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <div class="section-label green reveal">01 — About</div>
+    <div class="about-grid">
+      <div class="about-portrait reveal">
+        <div class="about-portrait-inner"></div>
+        <span class="portrait-tag">Hi, that's me</span>
+      </div>
+      <div class="about-text">
+        <h2 class="reveal">
+          Five years of designing <span class="green-mark"><b>systems</b></span> — from <span class="green-mark"><b>construction sites</b></span> to consumer apps.
+        </h2>
+        <p class="reveal reveal-delay-1">
+          I'm Alex — a designer who lives between UX/UI and corporate identity. I started out in HMI design for industrial machines and now work across the full spectrum: design systems, mobile products, brand rollouts, and the templates that keep teams shipping.
+        </p>
+        <p class="reveal reveal-delay-2">
+          I care about the unglamorous parts: variables architecture, naming conventions, component specs, and handover documentation. Good design is what survives after you leave the room.
+        </p>
+
+        <div class="skill-tags reveal reveal-delay-3">
+          <span class="skill-tag">Figma</span>
+          <span class="skill-tag">Design Systems</span>
+          <span class="skill-tag">Adobe CC</span>
+          <span class="skill-tag">After Effects</span>
+          <span class="skill-tag">Premiere Pro</span>
+          <span class="skill-tag">Prototyping</span>
+          <span class="skill-tag">Design Tokens</span>
+          <span class="skill-tag">Brand Strategy</span>
+        </div>
+
+        <div class="about-stats reveal reveal-delay-4">
+          <div>
+            <div class="stat-num">5<span class="plus">+</span></div>
+            <div class="stat-label">Years in design</div>
+          </div>
+          <div>
+            <div class="stat-num">40<span class="plus">+</span></div>
+            <div class="stat-label">Shipped projects</div>
+          </div>
+          <div>
+            <div class="stat-num">2</div>
+            <div class="stat-label">Design systems live</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WORK -->
+<section id="work">
+  <div class="container">
+    <div class="section-label reveal">02 — Selected Work</div>
+    <div class="work-header">
+      <h2 class="reveal">
+        Projects, <span class="green-mark">recent first</span>.
+      </h2>
+      <div class="work-filter reveal reveal-delay-1">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="ux">UX/UI</button>
+        <button class="filter-btn" data-filter="brand">Corporate Design</button>
+      </div>
+    </div>
+
+    <div class="projects">
+      <a href="sites/case-liebherr-app.html" class="project reveal" data-cat="ux" data-label="Liebherr Web & App Designsystem 2.0" data-preview="content/previews/liebherr-app.jpg">
+        <div class="project-num">/01</div>
+        <div class="project-title">Liebherr<br/>Designsystem 2.0</div>
+        <div class="project-meta">
+          <span class="project-tag">UX/UI · Design System · 2026</span>
+          <span class="project-desc">A unified token-driven design system across Liebherr's web and native app product suite.</span>
+        </div>
+        <div class="project-arrow">→</div>
+      </a>
+
+      <a href="sites/case-liebherr-rollout.html" class="project reveal" data-cat="brand" data-label="Liebherr Brand Evolution Rollout" data-preview="content/previews/liebherr-rollout.jpg">
+        <div class="project-num">/02</div>
+        <div class="project-title">Liebherr Brand<br/>Evolution Rollout</div>
+        <div class="project-meta">
+          <span class="project-tag">Corporate Design · Rollout · 2022</span>
+          <span class="project-desc">Cross-divisional rollout of Liebherr's evolved corporate identity across digital touchpoints.</span>
+        </div>
+        <div class="project-arrow">→</div>
+      </a>
+
+      <a href="sites/case-bico.html" class="project reveal" data-cat="ux" data-label="Bico — Bicycle App" data-preview="content/previews/bico.jpg">
+        <div class="project-num">/03</div>
+        <div class="project-title">Bico<br/>Bicycle App</div>
+        <div class="project-meta">
+          <span class="project-tag">UX/UI · Mobile App · 2023</span>
+          <span class="project-desc">A companion app for urban cyclists — route planning, ride logging, and community.</span>
+        </div>
+        <div class="project-arrow">→</div>
+      </a>
+
+      <a href="sites/case-gopark.html" class="project reveal" data-cat="ux" data-label="goPark — Parking App" data-preview="content/projects/goPark/goPark-teaser.png">
+        <div class="project-num">/04</div>
+        <div class="project-title">goPark<br/>Parking App</div>
+        <div class="project-meta">
+          <span class="project-tag">UX/UI · Mobile App · 2023</span>
+          <span class="project-desc">Frictionless parking for the impatient — live availability, tap-to-pay, zero menus.</span>
+        </div>
+        <div class="project-arrow">→</div>
+      </a>
+
+      <a href="sites/case-bachelor.html" class="project reveal" data-cat="ux" data-label="Bachelor Project — Liebherr HMI" data-preview="content/projects/HMI/HMI-teaser.png">
+        <div class="project-num">/05</div>
+        <div class="project-title">HMI Designsystem</div>
+        <div class="project-meta">
+          <span class="project-tag">UX/UI · HMI · Bachelor thesis ·2024</span>
+          <span class="project-desc">A design system for in-cab Human machine interface displays on Liebherr construction machines.</span>
+        </div>
+        <div class="project-arrow">→</div>
+      </a>
+
+      <a href="sites/case-templates.html" class="project reveal" data-cat="brand" data-label="Canva & Adobe Templates" data-preview="content/previews/templates.jpg">
+        <div class="project-num">/06</div>
+        <div class="project-title">Templates for Canva<br/>&amp; Adobe Suite</div>
+        <div class="project-meta">
+          <span class="project-tag">Corporate Design · Templates · 2025</span>
+          <span class="project-desc">A library of branded templates for Canva, After Effects and Premiere Pro for marketing teams.</span>
+        </div>
+        <div class="project-arrow">→</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- floating preview -->
+<div class="project-preview" id="preview" aria-hidden="true">
+  <img id="previewImg" src="" alt="">
+</div>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <div class="section-label green reveal">03 — Contact</div>
+    <h2 class="contact-headline">
+      <span class="word-reveal"><span>Let's build</span></span><br/>
+      <span class="word-reveal"><span>something</span></span>
+      <span class="word-reveal"><span class="green-word">great</span></span><br/>
+      <span class="word-reveal"><span><span class="highlight">together</span>.</span></span>
+    </h2>
+
+    <a href="mailto:maurer.alexander@live.de" class="contact-mail reveal">
+      maurer.alexander@live.de
+      <span>↗</span>
+    </a>
+
+    <div class="contact-grid">
+      <div class="contact-block reveal">
+        <h4>Status</h4>
+        <p>Open for work/projects</p>
+        <p>Remote & on-site · Germany / EU</p>
+      </div>
+      <div class="contact-block reveal reveal-delay-1">
+        <h4>Links</h4>
+        <a href="https://www.linkedin.com/in/alexander-maurer-7b92b815b/">LinkedIn ↗</a>
+        <a href="#">Download CV ↗</a>
+      </div>
+    </div>
+
+    <footer>
+      <span>© 2026 Alex Maurer</span>
+      <span class="footer-link"><a href="#">Impressum</a></span>
+    </footer>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Bico — Bicycle App — Alex Maurer</title>
+<link rel="icon" type="image/svg" sizes="32x32" href="../content/logo/logo-32.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave&family=Sedgwick+Ave+Display&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+
+<nav id="nav">
+  <a href="../index.html" class="logo">
+    <img src="../content/logo/logo.svg" alt="L3X-Logo" width="48px">
+  </a>
+  <ul class="nav-links">
+    <li><a href="../index.html#about">About</a></li>
+    <li><a href="../index.html#work">Work</a></li>
+    <li><a href="../index.html#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- CASE HERO -->
+<section class="case-hero">
+  <div class="container">
+    <a href="../index.html#work" class="case-back reveal">← Back to all work</a>
+
+    <div class="case-meta-top reveal">
+      <span class="case-pill accent">UX/UI · Mobile App</span>
+      <span class="case-pill outline">2024</span>
+      <span class="case-pill outline">Self-initiated</span>
+    </div>
+
+    <h1 class="case-title reveal">Bico<br/><span class="green-mark">Bicycle</span> App</h1>
+    <p class="case-subtitle reveal reveal-delay-1">A companion app for urban cyclists — route planning, ride logging, and a community that doesn't feel like Strava.</p>
+
+    <div class="case-info-grid reveal reveal-delay-2">
+      <div class="case-info-block">
+        <h5>Role</h5>
+        <p>Solo Designer</p>
+      </div>
+      <div class="case-info-block">
+        <h5>Timeline</h5>
+        <p>4 months · 2023</p>
+      </div>
+      <div class="case-info-block">
+        <h5>Tools</h5>
+        <p>Figma, FigJam</p>
+      </div>
+      <div class="case-info-block">
+        <h5>Status</h5>
+        <p>Concept · prototype</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OVERVIEW -->
+<section class="case-section">
+  <div class="container">
+    <div class="case-content">
+      <div>
+        <div class="case-section-label">Overview</div>
+        <h3 class="reveal">A bike app for people who <span class="green-mark">ride</span>, not train.</h3>
+      </div>
+      <div class="case-text reveal reveal-delay-1">
+        <p>Bico started as a personal frustration. Every cycling app on the market is built for athletes — heart-rate zones, FTP curves, leaderboards. Most people on bikes are just commuting, running errands, or heading to the lake. They don't need a coach. They need a map, a logbook, and maybe a friend.</p>
+<p>Bico is a calmer companion: route planning that prioritizes safety over speed, a ride log that looks like a photo journal, and a community that surfaces local rides instead of global rankings.</p>
+<ul>
+  <li>Quiet, photo-led ride journal</li>
+  <li>Bike-aware routing (lanes, surfaces, gradient)</li>
+  <li>Neighborhood ride feed instead of leaderboards</li>
+  <li>iOS native, designed for one-handed use</li>
+</ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CHALLENGE -->
+<section class="case-section">
+  <div class="container">
+    <div class="case-content">
+      <div>
+        <div class="case-section-label">The Challenge</div>
+        <h3 class="reveal">Designing for the <span class="green-mark">90%</span> of cyclists who don't race.</h3>
+      </div>
+      <div class="case-text reveal reveal-delay-1">
+        <p>The hardest part was resisting feature creep. Once you start sketching a cycling app, every piece of your brain says "but what about cadence sensors? Power meters? Routes by elevation?" Saying no was the design.</p>
+<p>I ran six interviews with everyday riders before drawing a screen. The pattern was clear: they wanted to remember rides, share them lightly, and avoid scary streets. That's the entire product.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery-section">
+  <div class="container">
+    <div class="case-section-label reveal">Gallery</div>
+    <div class="gallery-track-wrap reveal reveal-delay-1">
+      <div class="gallery-track" id="galleryTrack">
+        <div class="gallery-slide">
+          <img class="gallery-slide-img" src="../content/projects/HMI/Visual.png" alt="Visual">
+          <span class="gallery-slide-num">/01</span>
+          <span class="gallery-slide-caption">01 — Visual</span>
+        </div>
+        <div class="gallery-slide">
+          <img class="gallery-slide-img" src="../content/projects/HMI/Prototype.png" alt="Prototype">
+          <span class="gallery-slide-num">/02</span>
+          <span class="gallery-slide-caption">02 — Prototype screens</span>
+        </div>
+        <div class="gallery-slide">
+          <img class="gallery-slide-img" src="../content/projects/HMI/Branding.png" alt="Branding">
+          <span class="gallery-slide-num">/03</span>
+          <span class="gallery-slide-caption">03 — Branding</span>
+        </div>
+        <div class="gallery-slide">
+          <img class="gallery-slide-img" src="../content/projects/HMI/HUD-Visual.png" alt="Future Outlook">
+          <span class="gallery-slide-num">/04</span>
+          <span class="gallery-slide-caption">04 — Future Outlook</span>
+        </div>
+      </div>
+    </div>
+    <div class="gallery-controls reveal reveal-delay-2">
+      <div class="gallery-counter" id="galleryCounter">01 / 04</div>
+      <div class="gallery-dots" id="galleryDots"></div>
+      <div class="gallery-arrows">
+        <button class="gallery-arrow" id="galleryPrev" aria-label="Previous slide">←</button>
+        <button class="gallery-arrow" id="galleryNext" aria-label="Next slide">→</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- APPROACH -->
+<section class="case-section">
+  <div class="container">
+    <div class="case-content">
+      <div>
+        <div class="case-section-label">The Approach</div>
+        <h3 class="reveal">Three core flows, designed for <span class="green-mark">a stoplight</span>.</h3>
+      </div>
+      <div class="case-text reveal reveal-delay-1">
+        <p>Every primary action sits in the bottom third of the screen. Big tap targets. High contrast. The map is always one tap away — not buried behind a menu. The ride journal feels closer to a photo gallery than a data dashboard, with a single key metric and a generous space for notes.</p>
+<ul>
+  <li>One-handed first: every primary action reachable with thumb</li>
+  <li>Glanceable map UI for stop-and-go use</li>
+  <li>Photo-first ride journal with optional metrics</li>
+  <li>Calm color palette tested in direct sunlight</li>
+</ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VIDEO -->
+<section class="video-section">
+  <div class="container">
+    <div class="case-section-label reveal">Walkthrough</div>
+    <div class="video-wrap reveal reveal-delay-1" id="videoWrap" data-video-id="dQw4w9WgXcQ">
+      <div class="video-placeholder" id="videoPlaceholder">
+        <button class="play-btn" aria-label="Play video">▶</button>
+        <p>Watch the project video</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OUTCOME -->
+<section class="case-section">
+  <div class="container">
+    <div class="case-content">
+      <div>
+        <div class="case-section-label">Outcome</div>
+        <h3 class="reveal">A <span class="green-mark">working prototype</span> and a clearer philosophy.</h3>
+      </div>
+      <div class="case-text reveal reveal-delay-1">
+        <p>Bico is currently a high-fidelity prototype tested with 12 riders over three weeks. It's not shipped yet, but the experience of designing it taught me to ruthlessly cut features. Every "wouldn't it be nice if…" got measured against the question: would this make the app heavier to open?</p>
+<p>If the answer was yes, it didn't ship. That's the rule I now apply to every consumer product I work on.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NEXT PROJECT -->
+<div class="next-project">
+  <div class="container">
+    <div class="next-label">Next project</div>
+    <a href="case-gopark.html" class="next-link">
+      <h3>goPark<br/><span class="green-mark">Parking</span> App</h3>
+      <span class="next-arrow">→</span>
+    </a>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="case-footer">
+  <div class="case-footer-grid">
+    <h4>Want to see <span class="green-word">more</span>?<br/>Let's <span class="green-word">talk</span>.</h4>
+    <a href="mailto:maurer.alexander@live.de" class="case-footer-mail">maurer.alexander@live.de ↗</a>
+  </div>
+</footer>
+
+<script src="../script.js"></script>
+</body>
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Liebherr Web & App Designsystem 2.0 — Alex Maurer</title>
+<link rel="icon" type="image/svg" sizes="32x32" href="../content/logo/logo-32.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave&family=Sedgwick+Ave+Display&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+
+<nav id="nav">
+  <a href="../index.html" class="logo">
+    <img src="../content/logo/logo.svg" alt="L3X-Logo" width="48px">
+  </a>
+  <ul class="nav-links">
+    <li><a href="../index.html#about">About</a></li>
+    <li><a href="../index.html#work">Work</a></li>
+    <li><a href="../index.html#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- CASE HERO -->
+<section class="case-hero">
+  <div class="container">
+    <a href="../index.html#work" class="case-back reveal">← Back to all work</a>
+
+    <div class="case-meta-top reveal">
+      <span class="case-pill accent">UX/UI · Design System</span>
+      <span class="case-pill outline">2025</span>
+      <span class="case-pill outline">Liebherr Group</span>
+    </div>
+
+    <h1 class="case-title reveal">Liebherr <span class="green-mark">Web &amp; App</span><br/>Designsystem 2.0</h1>
+    <p class="case-subtitle reveal reveal-delay-1">A unified, token-driven design system powering Liebherr's web platforms and native apps across multiple product divisions.</p>
+
+    <div class="case-info-grid reveal reveal-delay-2">
+      <div class="case-info-block">
+        <h5>Role</h5>
+        <p>UI Designer</p>
+      </div>
+      <div class="case-info-block">
+        <h5>Timeline</h5>
+        <p>12 months · 2025-26</p>
+      </div>
+      <div class="case-info-block">
+        <h5>Tools</h5>
+        <p>Figma, Tokens Studio, Storybook</p>
+      </div>
+      <div class="case-info-block">
+        <h5>Status</h5>
+        <p>Live · in production</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OVERVIEW -->
+<section class="case-section">
+  <div class="container">
+    <div class="case-content">
+      <div>
+        <div class="case-section-label">Overview</div>
+        <h3 class="reveal">Replacing four legacy systems with <span class="green-mark">one</span> shared foundation.</h3>
+      </div>
+      <div class="case-text reveal reveal-delay-1">
+        <p>Liebherr's digital landscape spans dozens of product sites, configurators, and customer-facing apps across 13 divisions. Each had grown its own component library, type scale, and color logic — creating drift, duplicated work, and a confusing experience for users moving between Liebherr products.</p>
+<p>Designsystem 2.0 is a complete rebuild: a token-first architecture, a shared component layer for both web and native, and contribution guidelines that let internal product teams ship faster without breaking visual consistency.</p>
+<ul>
+  <li>Three-tier token system (primitive → semantic → component)</li>
+  <li>120+ components covering web and React Native</li>
+  <li>Themeable across all 13 product divisions</li>
+  <li>Automated handoff via Tokens Studio &amp; GitHub</li>
+</ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CHALLENGE -->
+<section class="case-section">
+  <div class="container">
+    <div class="case-content">
+      <div>
+        <div class="case-section-label">The Challenge</div>
+        <h3 class="reveal">How do you unify <span class="green-mark">13 divisions</span> without flattening them?</h3>
+      </div>
+      <div class="case-text reveal reveal-delay-1">
+        <p>The brief was deceptively simple: one design system to rule them all. The reality was politics, technical debt, and 13 product teams each protecting their own conventions.</p>
+<p>The hardest part wasn't drawing components — it was negotiating naming, governance, and a contribution model that felt fair. We ran weekly sync sessions with division leads for the first three months, plus a public Figma library that anyone could comment on.</p>
+<p><strong>Constraints we worked with:</strong> existing brand evolution rollout (running in parallel), legacy CMS that couldn't be replaced, accessibility floor of WCAG 2.2 AA, and shipping in production within ten months.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery-section">
+  <div class="container">
+    <div class="case-section-label reveal">Gallery</div>
+    <div class="gallery-track-wrap reveal reveal-delay-1">
+      <div class="gallery-track" id="galleryTrack">
+        <div class="gallery-slide">
+          <img class="gallery-slide-img" src="../content/projects/HMI/Visual.png" alt="Visual">
+          <span class="gallery-slide-num">/01</span>
+          <span class="gallery-slide-caption">01 — Visual</span>
+        </div>
+        <div class="gallery-slide">
+          <img class="gallery-slide-img" src="../content/projects/HMI/Prototype.png" alt="Prototype">
+          <span class="gallery-slide-num">/02</span>
+          <span class="gallery-slide-caption">02 — Prototype screens</span>
+        </div>
+        <div class="gallery-slide">
+          <img class="gallery-slide-img" src="../content/projects/HMI/Branding.png" alt="Branding">
+          <span class="gallery-slide-num">/03</span>
+          <span class="gallery-slide-caption">03 — Branding</span>
+        </div>
+        <div class="gallery-slide">
+          <img class="gallery-slide-img" src="../content/projects/HMI/HUD-Visual.png" alt="Future Outlook">
+          <span class="gallery-slide-num">/04</span>
+          <span class="gallery-slide-caption">04 — Future Outlook</span>
+        </div>
+      </div>
+    </div>
+    <div class="gallery-controls reveal reveal-delay-2">
+      <div class="gallery-counter" id="galleryCounter">01 / 04</div>
+      <div class="gallery-dots" id="galleryDots"></div>
+      <div class="gallery-arrows">
+        <button class="gallery-arrow" id="galleryPrev" aria-label="Previous slide">←</button>
+        <button class="gallery-arrow" id="galleryNext" aria-label="Next slide">→</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- APPROACH -->
+<section class="case-section">
+  <div class="container">
+    <div class="case-content">
+      <div>
+        <div class="case-section-label">The Approach</div>
+        <h3 class="reveal">A <span class="green-mark">token-first</span> system, themed per division.</h3>
+      </div>
+      <div class="case-text reveal reveal-delay-1">
+        <p>We split the system into three clear layers — primitives (raw values), semantics (intent), and components (assembled). This let us theme each division through semantic tokens without touching the components themselves.</p>
+<p>Documentation lives in a public Storybook with live code, do/don't pairs, and embedded Figma frames. We treated docs as a product: they got the same review process as components.</p>
+<ul>
+  <li>Migrated 4 legacy systems into the unified library</li>
+  <li>Cut average ship time for new screens by ~40%</li>
+  <li>Published contribution guidelines and quarterly RFC process</li>
+</ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VIDEO -->
+<section class="video-section">
+  <div class="container">
+    <div class="case-section-label reveal">Walkthrough</div>
+    <div class="video-wrap reveal reveal-delay-1" id="videoWrap" data-video-id="dQw4w9WgXcQ">
+      <div class="video-placeholder" id="videoPlaceholder">
+        <button class="play-btn" aria-label="Play video">▶</button>
+        <p>Watch the project video</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OUTCOME -->
+<section class="case-section">
+  <div class="container">
+    <div class="case-content">
+      <div>
+        <div class="case-section-label">Outcome</div>
+        <h3 class="reveal">Powering <span class="green-mark">40+</span> products inside Liebherr.</h3>
+      </div>
+      <div class="case-text reveal reveal-delay-1">
+        <p>Twelve months in, Designsystem 2.0 is live across 40+ products, with internal NPS from product teams sitting at +62. The bigger win is cultural: design and engineering finally share a vocabulary, and new product teams can ship a feature-complete MVP in weeks instead of quarters.</p>
+<p>The system continues to evolve through a public RFC process — the goal was never to finish it, but to make it ownable.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NEXT PROJECT -->
+<div class="next-project">
+  <div class="container">
+    <div class="next-label">Next project</div>
+    <a href="case-liebherr-rollout.html" class="next-link">
+      <h3>Liebherr Brand<br/><span class="green-mark">Evolution</span> Rollout</h3>
+      <span class="next-arrow">→</span>
+    </a>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="case-footer">
+  <div class="case-footer-grid">
+    <h4>Want to see <span class="green-word">more</span>?<br/>Let's <span class="green-word">talk</span>.</h4>
+    <a href="mailto:maurer.alexander@live.de" class="case-footer-mail">maurer.alexander@live.de ↗</a>
+  </div>
+</footer>
+
+<script src="../script.js"></script>
+</body>
+</html>

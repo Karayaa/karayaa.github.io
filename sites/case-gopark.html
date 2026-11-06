@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>goPark — Parking App — Alex Maurer</title>
+<link rel="icon" type="image/svg" sizes="32x32" href="../content/logo/logo-32.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave&family=Sedgwick+Ave+Display&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+
+<nav id="nav">
+  <a href="../index.html" class="logo">
+    <img src="../content/logo/logo.svg" alt="L3X-Logo" width="48px">
+  </a>
+  <ul class="nav-links">
+    <li><a href="../index.html#about">About</a></li>
+    <li><a href="../index.html#work">Work</a></li>
+    <li><a href="../index.html#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- CASE HERO -->
+<section class="case-hero">
+  <div class="container">
+    <a href="../index.html#work" class="case-back reveal">← Back to all work</a>
+
+    <div class="case-meta-top reveal">
+      <span class="case-pill accent">UX/UI · Mobile App</span>
+      <span class="case-pill outline">2024</span>
+      <span class="case-pill outline">Concept project</span>
+    </div>
+
+    <h1 class="case-title reveal">goPark<br/><span class="green-mark">Parking</span> App</h1>
+    <p class="case-subtitle reveal reveal-delay-1">Turning the daily frustration of urban parking into a seamless, sensor-driven experience — while quietly steering cities toward a car-free future.</p>
+
+    <div class="case-info-grid reveal reveal-delay-2">
+      <div class="case-info-block">
+        <h5>Role</h5>
+        <p>Solo Designer</p>
+      </div>
+      <div class="case-info-block">
+        <h5>Timeline</h5>
+        <p>4 months · 2024</p>
+      </div>
+      <div class="case-info-block">
+        <h5>Tools</h5>
+        <p>Figma, FigJam</p>
+      </div>
+      <div class="case-info-block">
+        <h5>Status</h5>
+        <p>Concept · prototype</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OVERVIEW -->
+<section class="case-section">
+  <div class="container">
+    <div class="case-content">
+      <div>
+        <div class="case-section-label">Overview</div>
+        <h3 class="reveal"><span class="green-mark">Smart parking</span>  for smarter cities.</h3>
+      </div>
+      <div class="case-text reveal reveal-delay-1">
+        <p>goPark is a mobile app concept that helps drivers find, navigate to, and pay for parking in real time — while gently nudging them toward more sustainable mobility choices.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CHALLENGE -->
+<section class="case-section">
+  <div class="container">
+    <div class="case-content">
+      <div>
+        <div class="case-section-label">The Challenge</div>
+        <h3 class="reveal">Parking is <span class="green-mark">broken.</span> Cities are paying the price.</h3>
+      </div>
+      <div class="case-text reveal reveal-delay-1">
+        <p>Urban parking is one of the most frustrating daily experiences — and the numbers back it up:</p>
+        <ul>
+          <li>Drivers spend up to 20 hours per year searching for a parking spot</li>
+          <li>30% of inner-city traffic is caused by drivers circling for parking</li>
+          <li>68% of urban land is dedicated to parking infrastructure</li>
+        </ul>
+        <p>Existing apps lack real-time data, have outdated interfaces, and do nothing to address the bigger picture: too many cars, too little space.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery-section">
+  <div class="container">
+    <div class="case-section-label reveal">Gallery</div>
+    <div class="gallery-track-wrap reveal reveal-delay-1">
+      <div class="gallery-track" id="galleryTrack">
+        <div class="gallery-slide">
+          <img class="gallery-slide-img" src="../content/projects/goPark/Introduction.png" alt="Introduction">
+          <span class="gallery-slide-num" style="color: var(--paper)">/01</span>
+          <span class="gallery-slide-caption" style="border-color: var(--paper); border-width: 1px;">01 — Introduction</span>
+        </div>
+        <div class="gallery-slide">
+          <img class="gallery-slide-img" src="../content/projects/goPark/Map.png" alt="Map">
+          <span class="gallery-slide-num" style="color: var(--paper)">/02</span>
+          <span class="gallery-slide-caption" style="border-color: var(--paper); border-width: 1px;">02 — Map</span>
+        </div>
+        <div class="gallery-slide">
+          <img class="gallery-slide-img" src="../content/projects/goPark/Parking.png" alt="Parking">
+          <span class="gallery-slide-num" style="color: var(--paper)">/03</span>
+          <span class="gallery-slide-caption" style="border-color: var(--paper); border-width: 1px;">03 — Parking</span>
+        </div>
+        <div class="gallery-slide">
+          <img class="gallery-slide-img" src="../content/projects/goPark/Insights.png" alt="Insights">
+          <span class="gallery-slide-num" style="color: var(--paper)">/04</span>
+          <span class="gallery-slide-caption" style="border-color: var(--paper); border-width: 1px;">04 — Insights</span>
+        </div>
+      </div>
+    </div>
+    <div class="gallery-controls reveal reveal-delay-2">
+      <div class="gallery-counter" id="galleryCounter">01 / 04</div>
+      <div class="gallery-dots" id="galleryDots"></div>
+      <div class="gallery-arrows">
+        <button class="gallery-arrow" id="galleryPrev" aria-label="Previous slide">←</button>
+        <button class="gallery-arrow" id="galleryNext" aria-label="Next slide">→</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- APPROACH -->
+<section class="case-section">
+  <div class="container">
+    <div class="case-content">
+      <div>
+        <div class="case-section-label">The Approach</div>
+        <h3 class="reveal"><span class="green-mark">Design Thinking</span> — From problem to prototype</h3>
+      </div>
+      <div class="case-text reveal reveal-delay-1">
+        <p>Using the full Design Thinking process — from user research and competitor analysis through to wireframing, high-fidelity prototyping, and structured usability testing — goPark was built around three key user groups: drivers, parking operators, and city administrators.</p>
+        <ul>
+          <li>Real-time parking availability via IoT sensor integration</li>
+          <li>In-app navigation, booking, and automatic payment</li>
+          <li>A "Nudging" layer surfacing transit alternatives, environmental impact, and cost savings</li>
+          <li>Branding built on clarity and trust: Proxima Nova, a teal-dark palette, and a logo that doubles as a map pin and a smile</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OUTCOME -->
+<section class="case-section">
+  <div class="container">
+    <div class="case-content">
+      <div>
+        <div class="case-section-label">Outcome</div>
+        <h3 class="reveal">Rated <span class="green-mark">"Excellent"</span> Across the Board.</h3>
+      </div>
+      <div class="case-text reveal reveal-delay-1">
+        <p>After testing with six participants spanning different age groups and technical backgrounds, goPark scored in the top benchmark category across all six UEQ dimensions — including attractiveness (2.53), stimulation (2.46), and efficiency (2.04).</P>
+        <P>The concept proved not only technically viable today, but also a strategic tool for cities looking to gradually reduce car dependency through smart infrastructure and positive behavioral design.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NEXT PROJECT -->
+<div class="next-project">
+  <div class="container">
+    <div class="next-label">Next project</div>
+    <a href="case-templates.html" class="next-link">
+      <h3>Templates for <span class="green-mark">Canva</span><br/>&amp; Adobe Suite</h3>
+      <span class="next-arrow">→</span>
+    </a>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="case-footer">
+  <div class="case-footer-grid">
+    <h4>Want to see <span class="green-word">more</span>?<br/>Let's <span class="green-word">talk</span>.</h4>
+    <a href="mailto:maurer.alexander@live.de" class="case-footer-mail">maurer.alexander@live.de ↗</a>
+  </div>
+</footer>
+
+<script src="../script.js"></script>
+</body>
+</html>
