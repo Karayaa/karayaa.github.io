@@ -16,7 +16,10 @@
   <a href="../index.html" class="logo">
     <img src="../content/logo/logo.svg" alt="L3X-Logo" width="48px">
   </a>
-  <ul class="nav-links">
+  <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links" id="navLinks">
     <li><a href="../index.html#about">About</a></li>
     <li><a href="../index.html#work">Work</a></li>
     <li><a href="../index.html#contact">Contact</a></li>
@@ -26,16 +29,16 @@
 <!-- CASE HERO -->
 <section class="case-hero">
   <div class="container">
-    <a href="../index.html#work" class="case-back reveal">← Back to all work</a>
+    <a href="../index.html#work" class="case-back reveal"><span class="arrow-icon is-back" aria-hidden="true"></span> Back to all work</a>
 
     <div class="case-meta-top reveal">
-      <span class="case-pill accent">UX/UI · Mobile App</span>
-      <span class="case-pill outline">2024</span>
-      <span class="case-pill outline">Self-initiated</span>
+      <span class="case-pill accent">UX/UI · Mobile App · HMI</span>
+      <span class="case-pill outline">2022/23</span>
+      <span class="case-pill outline">Study project</span>
     </div>
 
-    <h1 class="case-title reveal">Bico<br/><span class="green-mark">Bicycle</span> App</h1>
-    <p class="case-subtitle reveal reveal-delay-1">A companion app for urban cyclists — route planning, ride logging, and a community that doesn't feel like Strava.</p>
+    <h1 class="case-title reveal">Bico<br/><span class="green-mark">Bicycle</span> Companion</h1>
+    <p class="case-subtitle reveal reveal-delay-1">Android Auto / CarPlay for the e-bike. Bico turns the smartphone into a safe on-board computer, with navigation, music, messages and bike data reduced to what you can handle while riding.</p>
 
     <div class="case-info-grid reveal reveal-delay-2">
       <div class="case-info-block">
@@ -44,7 +47,7 @@
       </div>
       <div class="case-info-block">
         <h5>Timeline</h5>
-        <p>4 months · 2023</p>
+        <p>5 months · Oct–Feb</p>
       </div>
       <div class="case-info-block">
         <h5>Tools</h5>
@@ -64,16 +67,16 @@
     <div class="case-content">
       <div>
         <div class="case-section-label">Overview</div>
-        <h3 class="reveal">A bike app for people who <span class="green-mark">ride</span>, not train.</h3>
+        <h3 class="reveal">One screen on the handlebar, <span class="green-mark">built for riding</span>.</h3>
       </div>
       <div class="case-text reveal reveal-delay-1">
-        <p>Bico started as a personal frustration. Every cycling app on the market is built for athletes — heart-rate zones, FTP curves, leaderboards. Most people on bikes are just commuting, running errands, or heading to the lake. They don't need a coach. They need a map, a logbook, and maybe a friend.</p>
-<p>Bico is a calmer companion: route planning that prioritizes safety over speed, a ride log that looks like a photo journal, and a community that surfaces local rides instead of global rankings.</p>
+        <p>Cyclists already use their phones on the bike to navigate, listen to music and podcasts, track workouts and answer messages. But those apps were never designed to be used while riding. At the same time, every e-bike brand ships its own on-board computer or its own app, and when that hardware breaks, it's expensive to replace.</p>
+<p>Bico is a concept that brings both together. Like Android Auto or CarPlay in a car, it runs third-party apps in a reduced, glanceable interface. It also serves as the e-bike's display, so the clutter on the handlebar comes down to a single device. I followed the Design Thinking process from understanding the problem to a tested, clickable prototype.</p>
 <ul>
-  <li>Quiet, photo-led ride journal</li>
-  <li>Bike-aware routing (lanes, surfaces, gradient)</li>
-  <li>Neighborhood ride feed instead of leaderboards</li>
-  <li>iOS native, designed for one-handed use</li>
+  <li>App launcher for maps, music, fitness, messages and notes</li>
+  <li>Bike data (speed, assist mode, rides) in one place</li>
+  <li>Controllable by touch, voice and a handlebar HMI controller</li>
+  <li>Safety pauses, automatic light and dark mode, large UI</li>
 </ul>
       </div>
     </div>
@@ -86,11 +89,55 @@
     <div class="case-content">
       <div>
         <div class="case-section-label">The Challenge</div>
-        <h3 class="reveal">Designing for the <span class="green-mark">90%</span> of cyclists who don't race.</h3>
+        <h3 class="reveal">Phones on the handlebar are a <span class="green-mark">distraction</span> in traffic.</h3>
       </div>
       <div class="case-text reveal reveal-delay-1">
-        <p>The hardest part was resisting feature creep. Once you start sketching a cycling app, every piece of your brain says "but what about cadence sensors? Power meters? Routes by elevation?" Saying no was the design.</p>
-<p>I ran six interviews with everyday riders before drawing a screen. The pattern was clear: they wanted to remember rides, share them lightly, and avoid scary streets. That's the entire product.</p>
+        <p>Using a smartphone on a bike is dangerous. Interfaces built for walking or sitting demand too much attention, and riders put themselves and others at risk.</p>
+<p>The problem affects every kind of cyclist: commuters, people riding for sport and people riding for fun. E-bike owners have a second problem. The software is fragmented across brands, and switching to a new or used e-bike means learning a whole new system.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RESEARCH -->
+<section class="case-section">
+  <div class="container">
+    <div class="case-content">
+      <div>
+        <div class="case-section-label">Research</div>
+        <h3 class="reveal">Competitors, an <span class="green-mark">industry expert</span> and three personas.</h3>
+      </div>
+      <div class="case-text reveal reveal-delay-1">
+        <p>I compared Android Auto, CarPlay, COBI.Bike, VanMoof and the Brose e-bike app on visual design, navigation, usability, features and intuitiveness. The car systems integrate third-party apps well but only work in a car. The bike apps are locked to one motor or brand, don't connect to other apps, or can't be used while riding at all.</p>
+<p>To understand the technical side, I interviewed the product owner of the Brose e-bike app. Three findings shaped the concept:</p>
+<ul>
+  <li>Controlling the motor directly from the phone would need a wired connection; Bluetooth latency is too high</li>
+  <li>Third-party apps can be integrated through APIs, but riders will blame the bike maker when a service like Spotify breaks</li>
+  <li>The better approach: control the phone app through the e-bike's HMI instead of the other way around</li>
+</ul>
+<p>A survey and three personas then covered the main user groups. Mia (19, student, leisure rider) needs safe navigation through busy city traffic. Ben (24, road cyclist) wants navigation and fitness tracking without switching between apps. Lea (28, daily commuter) wants podcasts and voice memos on her 45-minute ride.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DEFINE -->
+<section class="case-section">
+  <div class="container">
+    <div class="case-content">
+      <div>
+        <div class="case-section-label">Define</div>
+        <h3 class="reveal">How might we make the phone <span class="green-mark">safe to use</span> while riding?</h3>
+      </div>
+      <div class="case-text reveal reveal-delay-1">
+        <p>I turned the research into five "How might we" questions and defined a concrete answer for each one:</p>
+<ul>
+  <li><strong>Safe use:</strong> large, reduced UI and forced pauses after long use without the HMI controller</li>
+  <li><strong>HMI control:</strong> a tile layout with a highlight state that you navigate by up, down, left, right, select and back</li>
+  <li><strong>Riding in the dark:</strong> light and dark mode switch automatically with ambient light, and dark mode can stay on permanently</li>
+  <li><strong>Voice in the wind:</strong> the screen shows what was understood, so commands can be repeated, plus a tip to use headphones</li>
+  <li><strong>Battery:</strong> a power-saving prompt after 30 minutes and screen brightness inside the app's own settings</li>
+</ul>
       </div>
     </div>
   </div>
@@ -103,24 +150,24 @@
     <div class="gallery-track-wrap reveal reveal-delay-1">
       <div class="gallery-track" id="galleryTrack">
         <div class="gallery-slide">
-          <img class="gallery-slide-img" src="../content/projects/HMI/Visual.png" alt="Visual">
+          <img class="gallery-slide-img" src="../content/projects/Bico/Hero.png" alt="Visual">
           <span class="gallery-slide-num">/01</span>
           <span class="gallery-slide-caption">01 — Visual</span>
         </div>
         <div class="gallery-slide">
-          <img class="gallery-slide-img" src="../content/projects/HMI/Prototype.png" alt="Prototype">
+          <img class="gallery-slide-img" src="../content/projects/Bico/Navigation.png" alt="Navigation">
           <span class="gallery-slide-num">/02</span>
-          <span class="gallery-slide-caption">02 — Prototype screens</span>
+          <span class="gallery-slide-caption">02 — Navigation</span>
         </div>
         <div class="gallery-slide">
-          <img class="gallery-slide-img" src="../content/projects/HMI/Branding.png" alt="Branding">
+          <img class="gallery-slide-img" src="../content/projects/Bico/Light-Dark.png" alt="Light & Dark Mode">
           <span class="gallery-slide-num">/03</span>
-          <span class="gallery-slide-caption">03 — Branding</span>
+          <span class="gallery-slide-caption">03 — Light & Dark Mode</span>
         </div>
         <div class="gallery-slide">
-          <img class="gallery-slide-img" src="../content/projects/HMI/HUD-Visual.png" alt="Future Outlook">
+          <img class="gallery-slide-img" src="../content/projects/Bico/Safety.png" alt="Safety">
           <span class="gallery-slide-num">/04</span>
-          <span class="gallery-slide-caption">04 — Future Outlook</span>
+          <span class="gallery-slide-caption">04 — Safety</span>
         </div>
       </div>
     </div>
@@ -128,8 +175,8 @@
       <div class="gallery-counter" id="galleryCounter">01 / 04</div>
       <div class="gallery-dots" id="galleryDots"></div>
       <div class="gallery-arrows">
-        <button class="gallery-arrow" id="galleryPrev" aria-label="Previous slide">←</button>
-        <button class="gallery-arrow" id="galleryNext" aria-label="Next slide">→</button>
+        <button class="gallery-arrow" id="galleryPrev" aria-label="Previous slide"><span class="arrow-icon is-back" aria-hidden="true"></span></button>
+        <button class="gallery-arrow" id="galleryNext" aria-label="Next slide"><span class="arrow-icon" aria-hidden="true"></span></button>
       </div>
     </div>
   </div>
@@ -141,29 +188,17 @@
     <div class="case-content">
       <div>
         <div class="case-section-label">The Approach</div>
-        <h3 class="reveal">Three core flows, designed for <span class="green-mark">a stoplight</span>.</h3>
+        <h3 class="reveal">An app launcher that keeps <span class="green-mark">the map in view</span>.</h3>
       </div>
       <div class="case-text reveal reveal-delay-1">
-        <p>Every primary action sits in the bottom third of the screen. Big tap targets. High contrast. The map is always one tap away — not buried behind a menu. The ride journal feels closer to a photo gallery than a data dashboard, with a single key metric and a generous space for notes.</p>
+        <p>Brainstorming produced the scope: map and navigation, bike info, tracking and fitness, hands-off entertainment, messages, memos and settings. I wrote use cases for the key moments. They covered first-time setup, planning a route, switching to dark mode and pairing a headset, replying to a message by voice, and changing a playlist mid-ride.</p>
+<p>Everything starts from a central app launcher. When you leave the map, navigation stays visible as a small pop-up, so you can change a song without losing your route. Incoming messages appear as a pop-up on any screen, get read aloud by the assistant and can be answered with speech-to-text. You confirm the reply before it's sent.</p>
 <ul>
-  <li>One-handed first: every primary action reachable with thumb</li>
-  <li>Glanceable map UI for stop-and-go use</li>
-  <li>Photo-first ride journal with optional metrics</li>
-  <li>Calm color palette tested in direct sunlight</li>
+  <li>Bike app with switchable speedometer modes and a ride history</li>
+  <li>Map routing with preferences such as avoiding main roads</li>
+  <li>Safety pause that briefly locks the screen during long use</li>
+  <li>Step-by-step onboarding for connecting the phone to the bike</li>
 </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- VIDEO -->
-<section class="video-section">
-  <div class="container">
-    <div class="case-section-label reveal">Walkthrough</div>
-    <div class="video-wrap reveal reveal-delay-1" id="videoWrap" data-video-id="dQw4w9WgXcQ">
-      <div class="video-placeholder" id="videoPlaceholder">
-        <button class="play-btn" aria-label="Play video">▶</button>
-        <p>Watch the project video</p>
       </div>
     </div>
   </div>
@@ -175,11 +210,12 @@
     <div class="case-content">
       <div>
         <div class="case-section-label">Outcome</div>
-        <h3 class="reveal">A <span class="green-mark">working prototype</span> and a clearer philosophy.</h3>
+        <h3 class="reveal">A tested prototype <br> and a <span class="green-mark">clear iteration</span>.</h3>
       </div>
       <div class="case-text reveal reveal-delay-1">
-        <p>Bico is currently a high-fidelity prototype tested with 12 riders over three weeks. It's not shipped yet, but the experience of designing it taught me to ruthlessly cut features. Every "wouldn't it be nice if…" got measured against the question: would this make the app heavier to open?</p>
-<p>If the answer was yes, it didn't ship. That's the rule I now apply to every consumer product I work on.</p>
+        <p>I tested the clickable Figma prototype as a scripted ride with music, a safety pause, a voice reply and dark mode. Testers liked the safety lock, the clean design and the easy switching between apps.</p>
+<p>Next steps from the feedback: show more at once (map plus speed or music), alternative routes, a first-run tutorial and a landscape layout.</p>
+<p>My takeaway: on a bike, every feature has to justify the attention it takes.</p>
       </div>
     </div>
   </div>
@@ -191,7 +227,7 @@
     <div class="next-label">Next project</div>
     <a href="case-gopark.html" class="next-link">
       <h3>goPark<br/><span class="green-mark">Parking</span> App</h3>
-      <span class="next-arrow">→</span>
+      <span class="next-arrow"><span class="arrow-icon" aria-hidden="true"></span></span>
     </a>
   </div>
 </div>
@@ -200,7 +236,7 @@
 <footer class="case-footer">
   <div class="case-footer-grid">
     <h4>Want to see <span class="green-word">more</span>?<br/>Let's <span class="green-word">talk</span>.</h4>
-    <a href="mailto:maurer.alexander@live.de" class="case-footer-mail">maurer.alexander@live.de ↗</a>
+    <a href="mailto:maurer.alexander@live.de" class="case-footer-mail">maurer.alexander@live.de <span class="arrow-icon is-diag" aria-hidden="true"></span></a>
   </div>
 </footer>
 

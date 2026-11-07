@@ -4,6 +4,26 @@ if (nav) {
   window.addEventListener('scroll', () => {
     nav.classList.toggle('scrolled', window.scrollY > 20);
   });
+
+  // Mobile / tablet menu toggle
+  const navToggle = nav.querySelector('.nav-toggle');
+  const navLinks = nav.querySelector('.nav-links');
+  if (navToggle && navLinks) {
+    const setOpen = (open) => {
+      nav.classList.toggle('nav-open', open);
+      navToggle.setAttribute('aria-expanded', String(open));
+      navToggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+    };
+    navToggle.addEventListener('click', () => setOpen(!nav.classList.contains('nav-open')));
+    navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => setOpen(false)));
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && nav.classList.contains('nav-open')) { setOpen(false); navToggle.focus(); }
+    });
+    document.addEventListener('click', (e) => {
+      if (nav.classList.contains('nav-open') && !nav.contains(e.target)) setOpen(false);
+    });
+    window.matchMedia('(min-width: 901px)').addEventListener('change', (e) => { if (e.matches) setOpen(false); });
+  }
 }
 
 // Reveal observer

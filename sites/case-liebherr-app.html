@@ -16,7 +16,10 @@
   <a href="../index.html" class="logo">
     <img src="../content/logo/logo.svg" alt="L3X-Logo" width="48px">
   </a>
-  <ul class="nav-links">
+  <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links" id="navLinks">
     <li><a href="../index.html#about">About</a></li>
     <li><a href="../index.html#work">Work</a></li>
     <li><a href="../index.html#contact">Contact</a></li>
@@ -26,7 +29,7 @@
 <!-- CASE HERO -->
 <section class="case-hero">
   <div class="container">
-    <a href="../index.html#work" class="case-back reveal">← Back to all work</a>
+    <a href="../index.html#work" class="case-back reveal"><span class="arrow-icon is-back" aria-hidden="true"></span> Back to all work</a>
 
     <div class="case-meta-top reveal">
       <span class="case-pill accent">UX/UI · Design System</span>
@@ -129,8 +132,8 @@
       <div class="gallery-counter" id="galleryCounter">01 / 04</div>
       <div class="gallery-dots" id="galleryDots"></div>
       <div class="gallery-arrows">
-        <button class="gallery-arrow" id="galleryPrev" aria-label="Previous slide">←</button>
-        <button class="gallery-arrow" id="galleryNext" aria-label="Next slide">→</button>
+        <button class="gallery-arrow" id="galleryPrev" aria-label="Previous slide"><span class="arrow-icon is-back" aria-hidden="true"></span></button>
+        <button class="gallery-arrow" id="galleryNext" aria-label="Next slide"><span class="arrow-icon" aria-hidden="true"></span></button>
       </div>
     </div>
   </div>
@@ -192,7 +195,7 @@
     <div class="next-label">Next project</div>
     <a href="case-liebherr-rollout.html" class="next-link">
       <h3>Liebherr Brand<br/><span class="green-mark">Evolution</span> Rollout</h3>
-      <span class="next-arrow">→</span>
+      <span class="next-arrow"><span class="arrow-icon" aria-hidden="true"></span></span>
     </a>
   </div>
 </div>
@@ -201,7 +204,7 @@
 <footer class="case-footer">
   <div class="case-footer-grid">
     <h4>Want to see <span class="green-word">more</span>?<br/>Let's <span class="green-word">talk</span>.</h4>
-    <a href="mailto:maurer.alexander@live.de" class="case-footer-mail">maurer.alexander@live.de ↗</a>
+    <a href="mailto:maurer.alexander@live.de" class="case-footer-mail">maurer.alexander@live.de <span class="arrow-icon is-diag" aria-hidden="true"></span></a>
   </div>
 </footer>
 

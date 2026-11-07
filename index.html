@@ -15,7 +15,10 @@
   <a href="#hero" class="logo">
     <img src="content/logo/logo.svg" alt="L3X-Logo" width="48px">
   </a>
-  <ul class="nav-links">
+  <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links" id="navLinks">
     <li><a href="#about">About</a></li>
     <li><a href="#work">Work</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -40,7 +43,7 @@
       </p>
       <a href="#work" class="hero-cta reveal reveal-delay-4">
         See my work
-        <span>→</span>
+        <span class="arrow-icon" aria-hidden="true" style="width: 1.5em; height: 1.5em;">→</span>
       </a>
     </div>
   </div>
@@ -89,10 +92,10 @@
           <span class="skill-tag">Figma</span>
           <span class="skill-tag">Design Systems</span>
           <span class="skill-tag">Adobe CC</span>
-          <span class="skill-tag">After Effects</span>
-          <span class="skill-tag">Premiere Pro</span>
+          <span class="skill-tag">Corporate Design</span>
           <span class="skill-tag">Prototyping</span>
           <span class="skill-tag">Design Tokens</span>
+          <span class="skill-tag">AI</span>
           <span class="skill-tag">Brand Strategy</span>
         </div>
 
@@ -138,7 +141,7 @@
           <span class="project-tag">UX/UI · Design System · 2026</span>
           <span class="project-desc">A unified token-driven design system across Liebherr's web and native app product suite.</span>
         </div>
-        <div class="project-arrow">→</div>
+        <div class="project-arrow"><span class="arrow-icon" aria-hidden="true"></span></div>
       </a>
 
       <a href="sites/case-liebherr-rollout.html" class="project reveal" data-cat="brand" data-label="Liebherr Brand Evolution Rollout" data-preview="content/previews/liebherr-rollout.jpg">
@@ -148,17 +151,17 @@
           <span class="project-tag">Corporate Design · Rollout · 2022</span>
           <span class="project-desc">Cross-divisional rollout of Liebherr's evolved corporate identity across digital touchpoints.</span>
         </div>
-        <div class="project-arrow">→</div>
+        <div class="project-arrow"><span class="arrow-icon" aria-hidden="true"></span></div>
       </a>
 
-      <a href="sites/case-bico.html" class="project reveal" data-cat="ux" data-label="Bico — Bicycle App" data-preview="content/previews/bico.jpg">
+      <a href="sites/case-bico.html" class="project reveal" data-cat="ux" data-label="Bico — Bicycle App" data-preview="content/projects/Bico/Bico-teaser.png">
         <div class="project-num">/03</div>
         <div class="project-title">Bico<br/>Bicycle App</div>
         <div class="project-meta">
           <span class="project-tag">UX/UI · Mobile App · 2023</span>
           <span class="project-desc">A companion app for urban cyclists — route planning, ride logging, and community.</span>
         </div>
-        <div class="project-arrow">→</div>
+        <div class="project-arrow"><span class="arrow-icon" aria-hidden="true"></span></div>
       </a>
 
       <a href="sites/case-gopark.html" class="project reveal" data-cat="ux" data-label="goPark — Parking App" data-preview="content/projects/goPark/goPark-teaser.png">
@@ -168,7 +171,7 @@
           <span class="project-tag">UX/UI · Mobile App · 2023</span>
           <span class="project-desc">Frictionless parking for the impatient — live availability, tap-to-pay, zero menus.</span>
         </div>
-        <div class="project-arrow">→</div>
+        <div class="project-arrow"><span class="arrow-icon" aria-hidden="true"></span></div>
       </a>
 
       <a href="sites/case-bachelor.html" class="project reveal" data-cat="ux" data-label="Bachelor Project — Liebherr HMI" data-preview="content/projects/HMI/HMI-teaser.png">
@@ -178,7 +181,7 @@
           <span class="project-tag">UX/UI · HMI · Bachelor thesis ·2024</span>
           <span class="project-desc">A design system for in-cab Human machine interface displays on Liebherr construction machines.</span>
         </div>
-        <div class="project-arrow">→</div>
+        <div class="project-arrow"><span class="arrow-icon" aria-hidden="true"></span></div>
       </a>
 
       <a href="sites/case-templates.html" class="project reveal" data-cat="brand" data-label="Canva & Adobe Templates" data-preview="content/previews/templates.jpg">
@@ -188,7 +191,7 @@
           <span class="project-tag">Corporate Design · Templates · 2025</span>
           <span class="project-desc">A library of branded templates for Canva, After Effects and Premiere Pro for marketing teams.</span>
         </div>
-        <div class="project-arrow">→</div>
+        <div class="project-arrow"><span class="arrow-icon" aria-hidden="true"></span></div>
       </a>
     </div>
   </div>
@@ -212,7 +215,7 @@
 
     <a href="mailto:maurer.alexander@live.de" class="contact-mail reveal">
       maurer.alexander@live.de
-      <span>↗</span>
+      <span class="arrow-icon is-diag" aria-hidden="true"></span>
     </a>
 
     <div class="contact-grid">
@@ -223,8 +226,8 @@
       </div>
       <div class="contact-block reveal reveal-delay-1">
         <h4>Links</h4>
-        <a href="https://www.linkedin.com/in/alexander-maurer-7b92b815b/">LinkedIn ↗</a>
-        <a href="#">Download CV ↗</a>
+        <a href="https://www.linkedin.com/in/alexander-maurer-7b92b815b/">LinkedIn <span class="arrow-icon is-diag" aria-hidden="true"></span></a>
+        <a href="#">Download CV <span class="arrow-icon is-diag" aria-hidden="true"></span></a>
       </div>
     </div>
 
