@@ -366,7 +366,7 @@ h1.hero-title .strike {
 
 .hero-cta {
   display: inline-flex;
-  width: 20rem;
+  width: 15rem;
   align-items: center;
   gap: 0.75rem;
   font-family: 'Space Grotesk', sans-serif;
@@ -395,7 +395,7 @@ h1.hero-title .strike {
   transition: transform 0.3s ease;
 }
 .hero-cta:hover {
-  gap: 1.2rem;
+  gap: 1rem;
   background: var(--green);
   color: var(--ink);
   transform: rotate(-1deg) translate(3px, 3px);
@@ -1489,9 +1489,9 @@ footer {
   transform: rotate(-1deg);
 }
 .next-arrow {
-  font-family: 'Quakerhack';
-  font-size: 5rem;
+  font-size: 4rem;
   transition: transform 0.4s ease;
+  text-decoration: none;
 }
 .next-link:hover .next-arrow { transform: translateX(15px) rotate(-15deg); color: var(--green-deep); }
 
