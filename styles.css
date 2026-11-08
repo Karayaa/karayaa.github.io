@@ -448,12 +448,12 @@ h1.hero-title .strike {
   gap: 3rem;
   animation: marquee 28s linear infinite;
   white-space: nowrap;
-  font-family: 'Quakerhack';
-  font-size: 2.5rem;
-  font-weight: 400;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
   letter-spacing: -0.01em;
 }
-.marquee-track .circle {
+.marquee-track .dash {
   display: inline-block;
   color: var(--ink);
 }
@@ -903,7 +903,7 @@ h1.hero-title .strike {
 }
 .contact-mail:hover {
   color: var(--green);
-  gap: 2.5rem;
+  gap: 2rem;
 }
 
 .contact-grid {
@@ -1539,7 +1539,7 @@ footer {
 .case-footer h4 .green-word { color: var(--green); }
 .case-footer-mail {
   font-family: 'Space Grotesk', sans-serif;
-  font-size: 1.8rem;
+  font-size: clamp(1rem, 3.5vw, 1.5rem);
   color: var(--paper);
   text-decoration: none;
   border-bottom: 3px solid var(--green);
