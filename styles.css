@@ -992,8 +992,13 @@ footer {
   flex-shrink: 0;
   vertical-align: -0.15em;
   background-color: currentColor;
-  -webkit-mask: var(--arrow-svg) center / contain no-repeat;
-          mask: var(--arrow-svg) center / contain no-repeat;
+  border: none;
+  /* mask kept 1px inside the box — otherwise browsers bleed a hairline
+     of background-color along the box edge when the icon is rotated */
+  -webkit-mask: var(--arrow-svg) center / calc(100% - 2px) calc(100% - 2px) no-repeat;
+          mask: var(--arrow-svg) center / calc(100% - 2px) calc(100% - 2px) no-repeat;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
 }
 .arrow-icon.is-back { transform: scaleX(-1); }
 .arrow-icon.is-diag { transform: rotate(-45deg); }
