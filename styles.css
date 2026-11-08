@@ -987,16 +987,19 @@ footer {
 .arrow-icon {
   --arrow-svg: url('content/icons/arrow.svg');
   display: inline-block;
-  width: 1em;
-  height: 1em;
+  /* box is 1.1em but the mask only fills 90% of it, so the arrow still
+     reads ~1em. The transparent margin keeps browsers from bleeding a
+     hairline of background-color along the box edges when the icon is
+     rotated (is-diag, next-arrow hover) — the artwork nearly touches the
+     SVG's left/right edges, so a fixed 1px inset isn't enough on small sizes */
+  width: 1.1em;
+  height: 1.1em;
   flex-shrink: 0;
-  vertical-align: -0.15em;
+  vertical-align: -0.2em;
   background-color: currentColor;
   border: none;
-  /* mask kept 1px inside the box — otherwise browsers bleed a hairline
-     of background-color along the box edge when the icon is rotated */
-  -webkit-mask: var(--arrow-svg) center / calc(100% - 2px) calc(100% - 2px) no-repeat;
-          mask: var(--arrow-svg) center / calc(100% - 2px) calc(100% - 2px) no-repeat;
+  -webkit-mask: var(--arrow-svg) center / 90% 90% no-repeat;
+          mask: var(--arrow-svg) center / 90% 90% no-repeat;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
 }
@@ -1338,7 +1341,7 @@ footer {
   justify-content: center;
 }
 /* brush arrow shaft is ~9.5% of its size — 24px lands near the 2px button outline */
-.gallery-arrow .arrow-icon { width: 24px; height: 24px; }
+.gallery-arrow .arrow-icon { width: 26px; height: 26px; }
 .gallery-arrow:hover {
   background: var(--green);
   transform: translateY(-2px);
@@ -1470,7 +1473,7 @@ footer {
   flex-wrap: wrap;
   transition: transform 0.3s ease;
 }
-.next-link:hover { transform: translateX(8px); }
+.next-link:hover { transform: translateX(4px); }
 .next-link h3 {
   font-family: 'Quakerhack';
   font-weight: 400;
@@ -1625,7 +1628,7 @@ footer {
   #galleryNext { grid-area: next; }
   .gallery-counter { grid-area: count; text-align: center; font-size: 1.25rem; min-width: 4.5ch; }
   .gallery-arrow { width: 44px; height: 44px; }
-  .gallery-arrow .arrow-icon { width: 20px; height: 20px; }
+  .gallery-arrow .arrow-icon { width: 22px; height: 22px; }
   .next-project { padding: 4rem 1.25rem; }
   .case-footer { padding: 3rem 1.25rem 2rem; }
   .case-footer-grid { flex-direction: column; align-items: flex-start; }
@@ -1637,7 +1640,7 @@ footer {
   .hero-meta { flex-direction: column; gap: 0.5rem; align-items: flex-start; margin: none;}
   .case-info-grid { grid-template-columns: 1fr; }
   .gallery-arrow { width: 40px; height: 40px; }
-  .gallery-arrow .arrow-icon { width: 18px; height: 18px; }
+  .gallery-arrow .arrow-icon { width: 20px; height: 20px; }
   .gallery-dot { width: 22px; }
   .gallery-dot.active { width: 36px; }
   .play-btn { width: 70px; height: 70px; font-size: 1.6rem; }
