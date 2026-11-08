@@ -1573,7 +1573,7 @@ footer {
     transition: opacity 0.25s ease, transform 0.25s ease, visibility 0s linear 0.25s;
   }
   .next-arrow {
-  font-size: 2rem;
+  font-size: 3rem;
 }
   nav.nav-open .nav-links {
     opacity: 1;
