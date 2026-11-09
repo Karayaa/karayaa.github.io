@@ -517,18 +517,19 @@ h1.hero-title .strike {
   z-index: 1;
   overflow: hidden;
 }
-.about-portrait-inner::after {
-  content: 'AM';
-  font-family: 'Quakerhack';
-  font-size: 11rem;
-  color: var(--green);
-  letter-spacing: -0.03em;
-  line-height: 1;
+.about-portrait-inner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;          /* fill the frame, crop overflow instead of distorting */
+  object-position: 50% 20%;   /* keep the face in frame when cropping */
+  display: block;
 }
 .portrait-tag {
   position: absolute;
-  bottom: -5px;
-  left: -10px;
+  /* overlaps the bottom-right corner of .about-portrait-inner (inset 8% / 10%) */
+  bottom: calc(10% - 1rem);
+  right: calc(8% - 1.25rem);
+  white-space: nowrap;
   background: var(--green);
   color: var(--ink);
   padding: 0.5rem 1rem;
@@ -1259,15 +1260,6 @@ footer {
   position: relative;
   z-index: 2;
 }
-.gallery-slide-num {
-  position: absolute;
-  top: 1.2rem;
-  left: 1.2rem;
-  font-family: 'Quakerhack';
-  font-size: 1.2rem;
-  color: var(--ink);
-  z-index: 3;
-}
 .gallery-slide-caption {
   position: absolute;
   bottom: 1.2rem;
@@ -1560,7 +1552,6 @@ footer {
   .hero-bottom { grid-template-columns: 1fr; gap: 1.5rem; }
   .about-grid { grid-template-columns: 1fr; gap: 3rem; }
   .about-portrait { max-width: 320px; }
-  .about-portrait-inner::after { font-size: 6rem; }
   .about-stats { grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
   .stat-num { font-size: 2.8rem; }
   .project { grid-template-columns: 60px 1fr 50px; padding: 1.5rem; }
@@ -1608,6 +1599,7 @@ footer {
   .case-info-grid { grid-template-columns: 1fr; }
   .gallery-arrow { width: 40px; height: 40px; }
   .gallery-arrow .arrow-icon { width: 20px; height: 20px; }
+  .gallery-slide-caption { bottom: 0.6rem; left: 0.6rem; padding: 0.25rem 0.55rem; font-size: 0.5rem; letter-spacing: 0.1em; }
   .gallery-dot { width: 22px; }
   .gallery-dot.active { width: 36px; }
   .play-btn { width: 70px; height: 70px; font-size: 1.6rem; }
