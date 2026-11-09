@@ -23,7 +23,9 @@
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
-html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+/* clip (not hidden): mobile browsers ignore overflow-x:hidden on body, and the
+   rotated marquee intentionally bleeds past the viewport edges */
+html { scroll-behavior: smooth; scroll-padding-top: 80px; overflow-x: clip; }
 
 body {
   font-family: 'Space Grotesk', sans-serif;
@@ -31,7 +33,8 @@ body {
   color: var(--ink);
   font-weight: 400;
   line-height: 1.5;
-  overflow-x: hidden;
+  overflow-x: hidden; /* fallback for browsers without clip */
+  overflow-x: clip;
   position: relative;
 }
 
@@ -1598,7 +1601,8 @@ footer {
   footer { flex-direction: column; gap: 1rem; }
   .scroll-indicator { display: none; }
   .project-preview { display: none; }
-  .marquee-track { font-size: 1.6rem; gap: 2rem; }
+  .marquee { padding: 1rem 0; margin: 1.5rem -3% 2.5rem; }
+  .marquee-track { font-size: 1.4rem; gap: 1.75rem; animation-duration: 20s; }
   .hero-splat { width: 90vw; height: 90vw; }
 
   .case-hero { padding: 7rem 1.25rem 3rem; }
@@ -1634,6 +1638,8 @@ footer {
 
 @media (max-width: 540px) {
   .contact-grid { grid-template-columns: 1fr; }
+  .marquee { padding: 0.7rem 0; margin: 1rem -3% 2rem; }
+  .marquee-track { font-size: 1.05rem; gap: 1.1rem; animation-duration: 13s; }
   .hero-meta { flex-direction: column; gap: 0.5rem; align-items: flex-start; margin: none;}
   .case-info-grid { grid-template-columns: 1fr; }
   .gallery-arrow { width: 40px; height: 40px; }
