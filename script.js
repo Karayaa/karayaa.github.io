@@ -140,7 +140,8 @@ if (galleryTrack) {
 const videoPlaceholder = document.getElementById('videoPlaceholder');
 const videoWrap = document.getElementById('videoWrap');
 if (videoPlaceholder && videoWrap) {
-  videoPlaceholder.addEventListener('click', () => {
+  videoPlaceholder.addEventListener('click', (e) => {
+    if (e.target.closest('a')) return; // privacy link inside the notice — don't load the video
     const videoId = videoWrap.dataset.videoId;
     if (!videoId) return;
     const iframe = document.createElement('iframe');
