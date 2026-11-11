@@ -281,7 +281,7 @@ section {
 h1.hero-title {
   font-family: 'Quakerhack';
   font-weight: 400;
-  font-size: clamp(6rem, 15vw, 16rem);
+  font-size: clamp(5rem, 15vw, 16rem);
   line-height: 0.92;
   letter-spacing: 0.025em;
   margin-bottom: 5rem;
